@@ -9,6 +9,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <keywords>cordova</keywords>
     <repo>https://github.com/chemerisuk/cordova-plugin-firebase-analytics</repo>
     <issue>https://github.com/chemerisuk/cordova-plugin-firebase-analytics/issues</issue>
+     
+     <dependency id="cordova-plugin-cocoapod-support"/>
 
     <js-module src="www/FirebaseAnalytics.js" name="FirebaseAnalytics">
         <merges target="cordova.plugins.firebase.analytics" />
@@ -25,6 +27,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <platform name="ios">
         <preference name="IOS_FIREBASE_ANALYTICS_VERSION" default="~> 7.0.0"/>
+               <preference name="pods_ios_min_version" value="8.0"/>
+               <preference name="pods_use_frameworks" value="true"/>
 
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
@@ -53,8 +57,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             </config>
             
             <pods>
-                <!--<pod name="Firebase/Analytics" spec="$IOS_FIREBASE_ANALYTICS_VERSION" />-->
-                <pod name="Firebase/Analytics" spec="6.31.0" />
+                <pod name="Firebase/Analytics" spec="$IOS_FIREBASE_ANALYTICS_VERSION" />
             </pods>
             
         </podspec>
