@@ -27,8 +27,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <platform name="ios">
         <preference name="IOS_FIREBASE_ANALYTICS_VERSION" default="~> 7.0.0"/>
-               <preference name="pods_ios_min_version" value="8.0"/>
-               <preference name="pods_use_frameworks" value="true"/>
+               <preference name="PODS_IOS_MIN_VERSION" value="8.0"/>
+               <preference name="PODS_USE_FRAMEWORKS" value="true"/>
 
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
