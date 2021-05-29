@@ -26,9 +26,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <preference name="AUTOMATIC_SCREEN_REPORTING_ENABLED" default="true" />
 
     <platform name="ios">
+       <pods-config ios-min-version="9.0" use-frameworks="true">
+       
+        </pods-config>
         <preference name="IOS_FIREBASE_ANALYTICS_VERSION" default="~> 7.0.0"/>
-               <preference name="PODS_IOS_MIN_VERSION" value="8.0"/>
-               <preference name="PODS_USE_FRAMEWORKS" value="true"/>
 
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
